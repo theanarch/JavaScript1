@@ -1,0 +1,25 @@
+{
+  "name": "firstpackage",
+  "version": "1.0.0",
+  "description": "My first package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theanarch/JavaScript1%14.git"
+  },
+  "keywords": [
+    "webpage"
+  ],
+  "author": "Boris Torbica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theanarch/JavaScript1%14/issues"
+  },
+  "homepage": "https://github.com/theanarch/JavaScript1%14#readme",
+  "dependencies": {
+    "moment": "^2.21.0"
+  }
+}
