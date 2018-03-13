@@ -19,7 +19,8 @@
     "url": "https://github.com/theanarch/JavaScript1%14/issues"
   },
   "homepage": "https://github.com/theanarch/JavaScript1%14#readme",
-  "dependencies": {
-    "moment": "^2.21.0"
+  "dependencies": {},
+  "devDependencies": {
+    "lodash": "^4.17.5"
   }
 }
