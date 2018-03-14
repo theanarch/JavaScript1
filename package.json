@@ -14,12 +14,14 @@
     "webpage"
   ],
   "author": "Boris Torbica",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/theanarch/JavaScript1%14/issues"
   },
   "homepage": "https://github.com/theanarch/JavaScript1%14#readme",
-  "dependencies": {},
+  "dependencies": {
+    "angular": "^1.6.9"
+  },
   "devDependencies": {
     "lodash": "^4.17.5"
   }

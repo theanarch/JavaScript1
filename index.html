@@ -1,12 +1,79 @@
 <html>
 
-    <head>
-        <title>Are you a belieber?</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
 
-    <body> 
-        <p>Next up:
-            GYM APP
-        </p>
-    </body>
+    <script>
+        function fixElement(element, message) {
+            alert(message);
+            element.focus();
+        }
+        function isMailReady(form) {
+            var passed = false;
+            if (form.fullname.value == "") {
+                fixElement(form.fullname, "Information saknas i fältet NAMN!");
+            }
+            else if (form.email.value.indexOf("@") == -1 ||
+                form.email.value.indexOf(".") == -1) {
+                fixElement(form.email, "Ange en giltig epostadress i fältet EPOSTADRESS!");
+            }
+            else if (form.message.value == "") {
+                fixElement(form.message, "Du har inte skrivit något meddelande!");
+            }
+            else {
+                passed = true;
+            }
+            return passed;
+        }
+    </script>
+
+    <title>namn...</title>
+
+
+</head>
+
+<body>
+
+    <ul class="navbar" Z>
+        <li>
+            <a href="#Home">Home</a>
+        </li>
+        <li>
+            <a href="#Economy">Economy</a>
+        </li>
+        <li>
+            <a href="#Health">Health</a>
+        </li>
+        <li>
+            <a href="#Programming">Programming</a>
+        </li>
+        <li>
+            <a href="#Donation">Donation</a>
+        </li>
+        <li>
+            <a href="#Contact">Contact</a>
+        </li>
+        <li>
+            <a href="#About">About</a>
+        </li>
+    </ul>
+
+
+    <form name="kontakt" action="mailto:din_egen@adress.com" method="POST" enctype="text/plain" onSubmit="return isMailReady(this);">
+
+        <fieldset style="width: 450px;">
+            <legend>Kontaktformulär: </legend>
+            <p class="formInfo">Namn:</p>
+            <input name="fullname" type="TEXT" size="40">
+            <p class="formInfo">E-postadress:</p>
+            <input name="email" type="TEXT" size="40">
+            </td>
+            <p class="formInfo">Meddelande:</p>
+            <textarea rows="5" cols="40" name="message"></textarea>
+            <input name="SUBMIT" type="SUBMIT" value="Skicka">
+        </fieldset>
+    </form>
+
+</body>
+
 </html>
