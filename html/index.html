@@ -25,38 +25,38 @@
             }
             return passed;
         }
+
+        var Handler = React.createClass({
+            componentDidMount: function () {
+                document.title = "Amazing Page";
+            }
+        });
+
+        // document.onreadystatechange = function() {
+        //     var pageList = [].slice.call(document.querySelectorAll(".navbar li"))
+        //         .map(function(element) { return element.textContent; })
+        //         .join(", ");
+        // }
+
+        // document.title = function() { if(){} };
+
     </script>
-
-    <title>namn...</title>
-
 
 </head>
 
+
+
 <body>
 
-    <ul class="navbar" Z>
-        <li>
-            <a href="#Home">Home</a>
-        </li>
-        <li>
-            <a href="#Economy">Economy</a>
-        </li>
-        <li>
-            <a href="#Health">Health</a>
-        </li>
-        <li>
-            <a href="#Programming">Programming</a>
-        </li>
-        <li>
-            <a href="#Donation">Donation</a>
-        </li>
-        <li>
-            <a href="#Contact">Contact</a>
-        </li>
-        <li>
-            <a href="#About">About</a>
-        </li>
-    </ul>
+    <div class='navbar'>
+            <a href="index.html"    title="Home">       Home</a>
+            <a href="Economy.html"  title="Economy">    Economy</a>
+            <a href="Health.html"   title="Health">     Health</a>
+            <a href="Projects.html" title="Projects"    >Projects</a>
+            <a href="Donation.html" title="Donation">   Donation</a>
+            <a href="Contact.html"  title="Contact">    Contact</a>
+            <a href="About.html"    title="About">      About</a>
+    </div>
 
 
     <form name="kontakt" action="mailto:din_egen@adress.com" method="POST" enctype="text/plain" onSubmit="return isMailReady(this);">
