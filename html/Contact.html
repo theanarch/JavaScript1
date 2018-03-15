@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <script src="myscripts.js"></script>
+</head>
+
+<body>
+    <form name="kontakt" action="mailto:din_egen@adress.com" method="POST" enctype="text/plain" onSubmit="return isMailReady(this);">
+
+        <fieldset class="contactField">
+            <legend>Kontaktformulär: </legend>
+            <p class="formInfo">Namn:</p>
+            <input name="fullname" type="TEXT" size="40">
+            <p class="formInfo">E-postadress:</p>
+            <input name="email" type="TEXT" size="40">
+            </td>
+            <p class="formInfo">Meddelande:</p>
+            <textarea rows="5" cols="40" name="message"></textarea>
+            <input name="SUBMIT" type="SUBMIT" value="Skicka">
+        </fieldset>
+    </form>
+</body>
+
+</html>

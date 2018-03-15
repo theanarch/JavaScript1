@@ -1,8 +1,15 @@
-p.formInfo{
-    line-height: 1000px   
+.pDavid {
+    color: #ff9999
 }
 
-p.pDavid{
-    font: Arial;
-    size: 24;
+.contactField{
+    width: 450px;
+}
+
+.body{
+    color: black;
+}
+
+.econSec:hover {
+    color: aqua;
 }
