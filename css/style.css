@@ -1,15 +1,31 @@
-.pDavid {
-    color: #ff9999
+.body{
+    background-color: black;
 }
+
+div.davidTxt {
+    color: #ff9999;
+    width: 46em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h1David{
+    color: aquamarine;
+}
+
+#imgDavid{
+    height:70%;
+    width:70%;
+}
+
 
 .contactField{
     width: 450px;
 }
 
-.body{
-    color: black;
-}
+
 
 .econSec:hover {
-    color: aqua;
+    
 }
