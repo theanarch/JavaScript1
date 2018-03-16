@@ -13,6 +13,27 @@
         // }
 
         // document.title = function() { if(){} };
+
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
     </script>
 
 </head>
@@ -20,12 +41,19 @@
 
 
 <body class="body">
-    <h1>Whatever the fuck</h1>
+    <nav class="dropdown">
+        <a href="index.html" title="Home"> Home</a>
+        <button onclick="myFunction()" class="droptbn">Economy</button>
+            <a href="Economy.html" title="View market live">Cryptocurrency</a>
+            <a href=Economy.html title="View stock market">Stocks</a>
+        <button onclick="myFunction()" class="droptbn">Hoasdme</button>
+        <button onclick="myFunction()" class="droptbn">asd</button>
 
-    <nav>
+
+
         <a href="index.html" title="Home"> Home</a>
         <a href="Economy.html" title="Economy"> Economy</a>
-        <section class="econSec">
+        <section class="economySection">
             <a href="Cryptocurrency.html" title="View market live">Cryptocurrency</a>
             <a href=Stocks.html title="View stock market">Stocks</a>
         </section>

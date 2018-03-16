@@ -2,22 +2,7 @@
     background-color: black;
 }
 
-div.davidTxt {
-    color: #ff9999;
-    width: 46em;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.h1David{
-    color: aquamarine;
-}
-
-#imgDavid{
-    height:70%;
-    width:70%;
-}
 
 
 .contactField{
@@ -28,4 +13,31 @@ div.davidTxt {
 
 .econSec:hover {
     
+}
+
+
+/* Donation.html */
+div.davidInit {
+    color: #ff9999;
+    width: 46em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1.h1David{
+    color: aquamarine;
+}
+
+#imgDavid{
+    height: auto;
+    width:60%;
+}
+
+#imgBitcoin{
+    /* position: relative; */
+    height:1em;
+    width:1em;
+    vertical-align:text-top;
+    /* flex-shrink: 10; */
 }
