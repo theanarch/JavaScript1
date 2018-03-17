@@ -1,11 +1,13 @@
+<!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="../css/style.css" rel="stylesheet" type="text/css" />
 
-    <script>
+    <!-- <script>
         // document.onreadystatechange = function() {
         //     var pageList = [].slice.call(document.querySelectorAll(".navbar li"))
         //         .map(function(element) { return element.textContent; })
@@ -13,55 +15,69 @@
         // }
 
         // document.title = function() { if(){} };
+    </script> -->
 
-        /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
+    <script>function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
         }
 
         // Close the dropdown if the user clicks outside of it
-        window.onclick = function (event) {
-            if (!event.target.matches('.dropbtn')) {
-
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
                 }
             }
-        }
-    </script>
+        }</script>
 
+<script>function myFunction2() {
+        document.getElementById("myDropdown2").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (e) {
+        if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown2");
+            if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+            }
+        }
+    }</script>
 </head>
 
 
 
 <body class="body">
-    <nav class="dropdown">
-        <a href="index.html" title="Home"> Home</a>
-        <button onclick="myFunction()" class="droptbn">Economy</button>
-            <a href="Economy.html" title="View market live">Cryptocurrency</a>
-            <a href=Economy.html title="View stock market">Stocks</a>
-        <button onclick="myFunction()" class="droptbn">Hoasdme</button>
-        <button onclick="myFunction()" class="droptbn">asd</button>
+    <nav class="navbar">
+        <a href="../html/index.html"> Home</a>
+
+        <div class=dropdown>
+            <!-- <script type="text/javascript" src="../js/navbar-clic.js"></script> -->
+            <button onclick="myFunction();" class="dropbtn">Economy
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="../html/Economy/Cryptocurrency.html">Cryptocurrency</a>
+                <a href="../html/Economy/Stocks.html">Stocks</a>
+            </div>
+        </div>
+        <div class=dropdown>
+            <button onclick="myFunction2();" class="dropbtn">Health
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown2"> 
+                <a href="../html/Health/TrainingLog.html">Training Log</a>
+                <a href="../html/Health/Food.html">Food</a>
+            </div>
+        </div>
 
 
-
-        <a href="index.html" title="Home"> Home</a>
-        <a href="Economy.html" title="Economy"> Economy</a>
-        <section class="economySection">
-            <a href="Cryptocurrency.html" title="View market live">Cryptocurrency</a>
-            <a href=Stocks.html title="View stock market">Stocks</a>
-        </section>
-        <a href="Health.html" title="Health"> Health</a>
-        <a href="Projects.html" title="Projects">Projects</a>
-        <a href="Donation.html" title="Donation"> Donation</a>
-        <a href="Contact.html" title="Contact"> Contact</a>
-        <a href="About.html" title="About"> About</a>
+        <!-- Economy => ../html/Cryptocurrency.html  ../html/Stocks.html -->
+        <a href="Projects.html">Projects</a>
+        <a href="Donation.html"> Donation</a>
+        <a href="Contact.html"> Contact</a>
+        <a href="About.html"> About</a>
     </nav>
 
 </body>
