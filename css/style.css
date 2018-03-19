@@ -16,7 +16,7 @@
 .navbar {
     overflow: hidden;
     background-color: #333;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
 }
 
 .navbar a {
@@ -35,7 +35,7 @@
 
 .dropdown .dropbtn {
     cursor: pointer;
-    font-size: 16px;    
+    font-size: 16px;
     border: none;
     outline: none;
     color: white;
@@ -54,7 +54,7 @@
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -67,11 +67,22 @@
     text-align: left;
 }
 
+.dropdown .icon {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-image: src('../images/arrow-closed.png');
+}
+
+.dropdown.show .icon {
+    background-image: url('../images/arrow-open.png');
+}
+
 .dropdown-content a:hover {
     background-color: #ddd;
 }
 
-.show {
+.show .dropdown-content {
     display: block;
 }
 
@@ -104,6 +115,7 @@ h1.h1David {
 #imgDavid {
     height: auto;
     width: 60%;
+    padding-bottom: 1%;
 }
 
 #imgBitcoin {

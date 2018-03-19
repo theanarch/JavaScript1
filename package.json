@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/theanarch/JavaScript1%14#readme",
   "dependencies": {
-    "angular": "^1.6.9"
+    "angular": "^1.6.9",
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
     "lodash": "^4.17.5"
