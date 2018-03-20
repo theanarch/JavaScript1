@@ -67,15 +67,18 @@
     text-align: left;
 }
 
-.dropdown .icon {
+.dropdown .icon:after {
     width: 15px;
     height: 15px;
+    content: '∧';
     display: inline-block;
-    background-image: src('../images/arrow-closed.png');
 }
 
-.dropdown.show .icon {
-    background-image: url('../images/arrow-open.png');
+.dropdown.show .icon:after {
+    width: 15px;
+    height: 15px;
+    content: '∨';
+    display: inline-block;
 }
 
 .dropdown-content a:hover {
