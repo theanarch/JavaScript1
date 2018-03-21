@@ -9,6 +9,12 @@
  * General *
  **********/
 
+.site_text_format .text_contact{
+    color: linen;
+    font-family: Helvetica, sans-serif, Arial;
+}
+
+
 /* .navbar {
     overflow: hidden;
     background-color: #333;
@@ -92,13 +98,16 @@
     text-decoration: none;
     padding: 0;
     margin: 0;
+}
+
+body{
     background: black;
 }
 
 nav {
     /* float: left; */
     width: 100%;
-    background: #fff;
+    background: auto;
 }
 
 .clearfix:after {
@@ -110,20 +119,23 @@ nav {
 nav>ul {
     float: right;
     width: 80%;
-    background: white;
+    background: auto;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 nav>ul>li {
-    float: left;
+    display: inline-block;
     width: auto;
     margin-right: 10px;
-    line-height: 100px;
+    line-height: 50px;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    background: #73AD21;
 }
 
 nav>ul li a {
     padding: 50px;
-    color: white;
+    color: linen;
     font-family: Helvetica, sans-serif, Arial;
 }
 
@@ -134,6 +146,27 @@ nav>ul>li>ul {
 nav>ul>li:hover {
     background-color: rgb(233, 75, 75);
 }
+
+.dropdown {
+      overflow: hidden;
+}
+
+.dropdown .icon:after {
+    width: 15px;
+    height: 15px;
+    content: '∧';
+    color: linen;
+    /* display: inline-block; */
+}
+
+.dropdown.show .icon:after {
+    width: 15px;
+    height: 15px;
+    content: '∨';
+    color: linen;
+    /* display: inline-block; */
+}
+
 
 /**********
  * Economy *
@@ -147,7 +180,7 @@ nav>ul>li:hover {
  * Donation *
  **********/
 
-/* div.davidInit {
+div.davidInit{
     color: #ff9999;
     width: 46em;
     text-align: center;
@@ -163,25 +196,59 @@ h1.h1David {
     height: auto;
     width: 60%;
     padding-bottom: 1%;
-} */
+} 
 
-/*#imgBitcoin {
-    /* position: relative; 
+#imgBitcoin {
     height: 1em;
     width: 1em;
     vertical-align: text-top;
-    /* flex-shrink: 10; 
-}*/
+}
+
+.bitadd{
+    color:yellow;
+}
+
+.davidEnd{
+    margin: 20;
+}
 
 /**********
  * About *
  **********/
 
+
 /**********
  * Contact *
  **********/
 
-/*
-.contactField {
-    width: 450px;
-}*/
+.h1_contact{
+    color: linen;
+    font-family: Helvetica, sans-serif, Arial;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.text_contact{
+    /* color: linen;
+    font-family: Helvetica, sans-serif, Arial; */
+    font-size: 16px;
+    margin-left: 3%;
+    margin-top: 0.5%;
+}
+
+.contactfield_contact{
+    position: absolute;
+    width: 0;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+fieldset#id_fieldsetcontact{
+    padding: 10px;
+    width: 9.375em;
+    color: linen;
+}
+
+.h2_contact{
+
+}

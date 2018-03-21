@@ -1,24 +1,56 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <script src="myscripts.js"></script>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Boris Torbica">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
-    <form name="kontakt" action="mailto:din_egen@adress.com" method="POST" enctype="text/plain" onSubmit="return isMailReady(this);">
 
-        <fieldset class="contactField">
-            <legend>Kontaktformulär: </legend>
-            <p class="formInfo">Namn:</p>
-            <input name="fullname" type="TEXT" size="40">
-            <p class="formInfo">E-postadress:</p>
-            <input name="email" type="TEXT" size="40">
-            </td>
-            <p class="formInfo">Meddelande:</p>
-            <textarea rows="5" cols="40" name="message"></textarea>
-            <input name="SUBMIT" type="SUBMIT" value="Skicka">
-        </fieldset>
-    </form>
+<body>
+    <h1 class=h1_contact>Kontakta mig</h1>
+
+    <div class=text_contact>
+        <p>Vill du veta mer om exempelvis mina projekt, intressen här, professionella planet etc, vänligen
+            använd nedanstående formulär så återkommer jag snarast.</p>
+    </div>
+
+
+    <div class=contactfield_contact>
+        <form name="kontakt" action="mailto:din_egen@adress.com" method="POST" enctype="text/plain" onSubmit="return isMailReady(this);">
+            <fieldset id="id_fieldsetcontact">
+                <legend>Kontaktformulär</legend>
+                <p class="formInfo">Namn:</p>
+                <input name="fullname" type="TEXT" size="40">
+                <p class="formInfo">E-postadress:</p>
+                <input name="email" type="TEXT" size="40">
+                </td>
+                <p class="formInfo">Meddelande:</p>
+                <textarea rows="5" cols="40" name="message"></textarea>
+                <input name="SUBMIT" type="SUBMIT" value="Skicka">
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="../js/contactbox.js"></script>
+
+    <aside>
+        <div class=contact_us>
+            <h2>CONTACT US</h2>
+
+            <h3 class=h2_contact>Phone</h3>
+
+            <h3 class=h2_contact>E-mail></h3>
+
+            <h3 class=h2_contact>Social Media</h3>
+            <a href="#">Link to LinkedIn</a>
+        </div>
+
+    </aside>
 </body>
 
 </html>

@@ -17,21 +17,23 @@
             <li>
                 <a href="../html/index.html">Home</a>
             </li>
-            <li>
-                <a href="../html/Economy/Economy.html"  onclick="dropFunction(this);">Economy</a>
-                <!-- <span class="icon"></span> -->
-                <ul>
-                    <li>
-                        <a href="../html/Economy/Cryptocurrency.html">Cryptocurrency</a>
-                    </li>
-                    <li>
-                        <a href="../html/Economy/Stocks.html">Stocks</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="../html/Health/Health.html"  onclick="dropFunction(this);">Health</a>
-                <!-- <span class="icon"></span> -->
+            <!-- <div  class=dropdown onclick="dropFunction(this);"> -->
+                <li>
+                    <a class=dropdown href="../html/Economy/Economy.html">Economy</a>
+                    <span class="icon"></span>
+                    <ul>
+                        <li>
+                            <a href="../html/Economy/Cryptocurrency.html">Cryptocurrency</a>
+                        </li>
+                        <li>
+                            <a href="../html/Economy/Stocks.html">Stocks</a>
+                        </li>
+                    </ul>
+                </li>
+            <!-- </div> -->
+            <li onclick="dropFunction(this);">
+                <a href="../html/Health/Health.html">Health</a>
+                <span class="icon"></span>
                 <ul>
                     <li>
                         <a href="../html/Health/TrainingLog.html">Training Log</a>
@@ -56,10 +58,10 @@
         </ul>
     </nav>
 
-        
+
     <script src="../js/navbar-click.js"></script>
 
-
+<footer>© Boris 2018</footer>
 </body>
 
 </html>
