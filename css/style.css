@@ -9,11 +9,7 @@
  * General *
  **********/
 
-.body {
-    background-color: black;
-}
-
-.navbar {
+/* .navbar {
     overflow: hidden;
     background-color: #333;
     font-family: Arial;
@@ -86,14 +82,62 @@
 }
 
 .show .dropdown-content {
+    display: block; 
+}*/
+
+/*******************************************************************************************************/
+
+* {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    background: black;
+}
+
+nav {
+    /* float: left; */
+    width: 100%;
+    background: #fff;
+}
+
+.clearfix:after {
+    clear: both;
     display: block;
+    content: "";
+}
+
+nav>ul {
+    float: right;
+    width: 80%;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav>ul>li {
+    float: left;
+    width: auto;
+    margin-right: 10px;
+    line-height: 100px;
+}
+
+nav>ul li a {
+    padding: 50px;
+    color: white;
+    font-family: Helvetica, sans-serif, Arial;
+}
+
+nav>ul>li>ul {
+    display: none;
+}
+
+nav>ul>li:hover {
+    background-color: rgb(233, 75, 75);
 }
 
 /**********
  * Economy *
  **********/
-
-.econSec:hover {}
 
 /**********
  * Health *
@@ -103,7 +147,7 @@
  * Donation *
  **********/
 
-div.davidInit {
+/* div.davidInit {
     color: #ff9999;
     width: 46em;
     text-align: center;
@@ -119,15 +163,15 @@ h1.h1David {
     height: auto;
     width: 60%;
     padding-bottom: 1%;
-}
+} */
 
-#imgBitcoin {
-    /* position: relative; */
+/*#imgBitcoin {
+    /* position: relative; 
     height: 1em;
     width: 1em;
     vertical-align: text-top;
-    /* flex-shrink: 10; */
-}
+    /* flex-shrink: 10; 
+}*/
 
 /**********
  * About *
@@ -137,6 +181,7 @@ h1.h1David {
  * Contact *
  **********/
 
+/*
 .contactField {
     width: 450px;
-}
+}*/

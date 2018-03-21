@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Boris Torbica">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- <script>
+        // document.onreadystatechange = function() {
+        //     var pageList = [].slice.call(document.querySelectorAll(".navbar li"))
+        //         .map(function(element) { return element.textContent; })
+        //         .join(", ");
+        // }
+
+        // document.title = function() { if(){} };
+    </script> -->
+
+</head>
+
+
+
+<body class="body" id="home">
+    <nav class="navbar">
+        <a href="../html/index.html"> Home</a>
+
+        <div class="dropdown" onclick="dropFunction(this);">
+            <button class="dropbtn icon">Economy
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="../html/Economy/Cryptocurrency.html">Cryptocurrency</a>
+                <a href="../html/Economy/Stocks.html">Stocks</a>
+            </div>
+        </div>
+        <div onclick="dropFunction(this);" class=dropdown>
+            <button class="dropbtn">Health
+                <i class="fa fa-caret-down"></i>
+                <span class="icon"></span>
+            </button>
+            <div class="dropdown-content">
+                <a href="../html/Health/TrainingLog.html">Training Log</a>
+                <a href="../html/Health/Food.html">Food</a>
+            </div>
+        </div>
+
+
+
+        <a href="Projects.html">Projects</a>
+        <a href="Donation.html"> Donation</a>
+        <a href="Contact.html"> Contact</a>
+        <a href="About.html"> About</a>
+    </nav>
+
+
+
+    
+    <script src="../js/navbar-click.js"></script>
+
+</body>
+
+</html>
