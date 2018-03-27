@@ -9,11 +9,10 @@
  * General *
  **********/
 
-.site_text_format .text_contact{
+.site_text_format .text_contact {
     color: linen;
     font-family: Helvetica, sans-serif, Arial;
 }
-
 
 /* .navbar {
     overflow: hidden;
@@ -100,41 +99,40 @@
     margin: 0;
 }
 
-body{
+body {
     background: black;
 }
 
-nav {
-    /* float: left; */
+#navbar {
+    float: left;
     width: 100%;
-    background: auto;
 }
 
-.clearfix:after {
+/* .clearfix:after {
     clear: both;
     display: block;
     content: "";
-}
+} */
 
-nav>ul {
-    float: right;
-    width: 80%;
-    background: auto;
+#navbar>ul {
+    float: left;
+    display: block;
+    text-align: center;
+    width: auto;
+    background: red;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 nav>ul>li {
     display: inline-block;
-    width: auto;
-    margin-right: 10px;
-    line-height: 50px;
+    margin: 2%;
+    /* line-height: 50px; */
     border-radius: 25px;
     border: 2px solid #73AD21;
     background: #73AD21;
 }
 
 nav>ul li a {
-    padding: 50px;
     color: linen;
     font-family: Helvetica, sans-serif, Arial;
 }
@@ -148,7 +146,7 @@ nav>ul>li:hover {
 }
 
 .dropdown {
-      overflow: hidden;
+    overflow: hidden;
 }
 
 .dropdown .icon:after {
@@ -167,7 +165,6 @@ nav>ul>li:hover {
     /* display: inline-block; */
 }
 
-
 /**********
  * Economy *
  **********/
@@ -180,7 +177,7 @@ nav>ul>li:hover {
  * Donation *
  **********/
 
-div.davidInit{
+div.davidInit {
     color: #ff9999;
     width: 46em;
     text-align: center;
@@ -196,7 +193,7 @@ h1.h1David {
     height: auto;
     width: 60%;
     padding-bottom: 1%;
-} 
+}
 
 #imgBitcoin {
     height: 1em;
@@ -204,11 +201,11 @@ h1.h1David {
     vertical-align: text-top;
 }
 
-.bitadd{
-    color:yellow;
+.bitadd {
+    color: yellow;
 }
 
-.davidEnd{
+.davidEnd {
     margin: 20;
 }
 
@@ -216,19 +213,18 @@ h1.h1David {
  * About *
  **********/
 
-
 /**********
  * Contact *
  **********/
 
-.h1_contact{
+.h1_contact {
     color: linen;
     font-family: Helvetica, sans-serif, Arial;
     margin-left: 3%;
     margin-top: 3%;
 }
 
-.text_contact{
+.text_contact {
     /* color: linen;
     font-family: Helvetica, sans-serif, Arial; */
     font-size: 16px;
@@ -236,19 +232,17 @@ h1.h1David {
     margin-top: 0.5%;
 }
 
-.contactfield_contact{
+.contactfield_contact {
     position: absolute;
     width: 0;
     margin-left: 10%;
     margin-top: 10%;
 }
 
-fieldset#id_fieldsetcontact{
+fieldset#id_fieldsetcontact {
     padding: 10px;
     width: 9.375em;
     color: linen;
 }
 
-.h2_contact{
-
-}
+.h2_contact {}
