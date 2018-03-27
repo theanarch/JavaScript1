@@ -97,15 +97,18 @@
     text-decoration: none;
     padding: 0;
     margin: 0;
+    font-size: 16px;
 }
 
 body {
-    background: black;
+    background: #003262;
 }
 
 #navbar {
     float: left;
     width: 100%;
+    padding-top: 10%;
+    text-align: center;
 }
 
 /* .clearfix:after {
@@ -115,34 +118,62 @@ body {
 } */
 
 #navbar>ul {
-    float: left;
-    display: block;
-    text-align: center;
-    width: auto;
-    background: red;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-nav>ul>li {
     display: inline-block;
-    margin: 2%;
-    /* line-height: 50px; */
-    border-radius: 25px;
-    border: 2px solid #73AD21;
-    background: #73AD21;
+    border: 26/16em solid rgb(2, 39, 66);
+    padding: 28/16em;
+    line-height: 3em;
+    background: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
 }
 
-nav>ul li a {
+#navbar>ul>li {
+    display: inline;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background: #1E76B5;
+    }
+    
+#navbar>ul>li:first-child {
+    display: inline;
+    border: 26/16em solid rgb(2, 39, 66);
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    padding: 28/16em;
+    line-height: 3em;
+    background: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+}
+
+#navbar>ul>li:last-child {
+    display: inline;
+    border: 26/16em solid rgb(2, 39, 66);
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+    padding: 28/16em;
+    line-height: 3em;
+    background: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+}
+
+#navbar>ul li a {
     color: linen;
     font-family: Helvetica, sans-serif, Arial;
 }
 
-nav>ul>li>ul {
+#navbar>ul>li>ul {
     display: none;
 }
 
-nav>ul>li:hover {
-    background-color: rgb(233, 75, 75);
+#navbar>ul>li:hover {
+    background-color: rgb(233, 75, 75) ; /*rgb(233, 75, 75)  #0E5889  14b9ef*/
 }
 
 .dropdown {
@@ -185,8 +216,9 @@ div.davidInit {
     margin-right: auto;
 }
 
-h1.h1David {
+#h1David {
     color: aquamarine;
+    font-size: 2em;
 }
 
 #imgDavid {
