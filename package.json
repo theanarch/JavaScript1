@@ -20,11 +20,13 @@
   },
   "homepage": "https://github.com/theanarch/JavaScript1%14#readme",
   "dependencies": {
-    "@angular/cli": "^1.7.3",
     "lodash": "^4.17.5"
   },
   "devDependencies": {
-    "@angular/core": "^6.0.0-rc.0",
-    "jquery": "^3.3.1"
+    "@angular/cli": "^1.7.3",
+    "@angular/compiler-cli": "^5.2.9",
+    "@angular/core": "^5.2.9",
+    "jquery": "^3.3.1",
+    "typescript": "^2.8.1"
   }
 }
